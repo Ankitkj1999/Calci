@@ -9,7 +9,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
 	<style>
         body{
-            font-family: 'Open Sans',sans-serif;
+            font-family:sans-serif ;
+
             background-color:black;
             top:50%;
             bottom: 50%;
@@ -53,31 +54,36 @@
             height: 71px;
             margin: 10px 20px;
             font-size: 35px;
-            color: rgb(252, 252, 252);
+            color: rgb(224, 224, 224);
             font-family: monospace;
         }
         #keyboard{
             height: 475px;
             padding-bottom: 2%;
-            padding-top: 1%;
+            padding-top: 2%;
         }
         .operator, .number, .empty{
             width: 50px;
             height: 50px;
-            margin: 15px;
+            margin: 16px;
             float: center;
             border-radius: 50%;
             border-width: 0;
-            font-size: 18px;
+            font-size: 28px;
         }
         .operator{
-            color: #0037fc;
-         font-weight: bolder;
-            font-stretch: semi-expanded;
+            color: #ffffff;
+       
             
         }
-        .number, .empty{
-            background-color: #eaedef;
+        .number{
+            background-color: transparent;
+            font-size: 50px;
+font-family:sans-serif ;
+ color: white;
+        }
+        .empty{
+            background-color: black;
         }
         .number, .operator{
             cursor: pointer;
@@ -89,24 +95,27 @@
             outline: 0;
         }
         button:nth-child(4){
-            font-size: 24px;
+            font-size: 40px;
             background-color: #20b2aa;
         }
         button:nth-child(8){
-            font-size: 24px;
+            font-size: 40px;
             background-color: #ffa500;
         }
         button:nth-child(12){
-            font-size: 24px;
+            font-size: 40px;
             background-color: #f08080;
         }
         button:nth-child(16){
-            font-size: 24px;
-            background-color: #7d93e0;
+            font-size: 40px;
+            background-color: #5177ff;
         }
         button:nth-child(20){
-            font-size: 24px;
-            background-color: #9477af;
+            font-size: 40px;
+            background-color: #be7bfd;
+        }
+        #clear,#backspace,#per{
+            background-color: #575757;
         }
         .center {
             margin: 0;
@@ -130,14 +139,14 @@
 					<div id="output">
 						<p id="output-value"></p>
                     </div>
-                    <hr style="width: 90%;  color: #ffffff;">
+                    <hr style="width: 90%;  color: #ffffff; opacity:.3;">
                   
 				</div>
 				<div id="keyboard">
                
 					<button class="operator" id="clear">C</button>
-					<button class="operator" id="backspace">CE</button>
-					<button class="operator" id="%">%</button>
+					<button class="operator" id="backspace">Cr</button>
+					<button class="operator" id="per">%</button>
 					<button class="operator" id="/">&#247;</button>
 					<button class="number" id="7">7</button>
 					<button class="number" id="8">8</button>
