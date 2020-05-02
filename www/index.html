@@ -10,7 +10,7 @@
 	<style>
         body{
             font-family: 'Open Sans',sans-serif;
-            background-color: black;
+            background-color:black;
             top:50%;
             bottom: 50%;
           
@@ -28,7 +28,7 @@
         #calculator{
             width: 345px;
             height: 620px;
-            background-color: #eaedef;
+            background-color: transparent;
             margin: 0 auto;
                         position: absolute;
             position: relative;
@@ -36,26 +36,30 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
         #result{
-            height: 120px;
+            height: 143px;
             margin-bottom: 3%;
+            color: rgb(252, 252, 252);
         }
         #history{
             text-align: right;
-            height: 20px;
+            height: 24px;
             margin: 0 20px;
             padding-top: 20px;
-            font-size: 15px;
-            color: #919191;
+            font-size: 21px;
+            color: #c7c7c7;
         }
         #output{
             text-align: right;
-            height: 60px;
+            height: 71px;
             margin: 10px 20px;
-            font-size: 30px;
+            font-size: 35px;
+            color: rgb(252, 252, 252);
+            font-family: monospace;
         }
         #keyboard{
-            height: 400px;
+            height: 475px;
             padding-bottom: 2%;
+            padding-top: 1%;
         }
         .operator, .number, .empty{
             width: 50px;
@@ -64,8 +68,13 @@
             float: center;
             border-radius: 50%;
             border-width: 0;
-            font-weight: bold;
-            font-size: 15px;
+            font-size: 18px;
+        }
+        .operator{
+            color: #0037fc;
+         font-weight: bolder;
+            font-stretch: semi-expanded;
+            
         }
         .number, .empty{
             background-color: #eaedef;
@@ -74,29 +83,29 @@
             cursor: pointer;
         }
         .operator:active, .number:active{
-            font-size: 13px;
+            font-size: 15px;
         }
         .operator:focus, .number:focus, .empty:focus{
             outline: 0;
         }
         button:nth-child(4){
-            font-size: 20px;
+            font-size: 24px;
             background-color: #20b2aa;
         }
         button:nth-child(8){
-            font-size: 20px;
+            font-size: 24px;
             background-color: #ffa500;
         }
         button:nth-child(12){
-            font-size: 20px;
+            font-size: 24px;
             background-color: #f08080;
         }
         button:nth-child(16){
-            font-size: 20px;
+            font-size: 24px;
             background-color: #7d93e0;
         }
         button:nth-child(20){
-            font-size: 20px;
+            font-size: 24px;
             background-color: #9477af;
         }
         .center {
@@ -121,7 +130,8 @@
 					<div id="output">
 						<p id="output-value"></p>
                     </div>
-                    <hr style="width: 90%;">
+                    <hr style="width: 90%;  color: #ffffff;">
+                  
 				</div>
 				<div id="keyboard">
                
