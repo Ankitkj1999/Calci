@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content=" #eaedef">
+
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Calci</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+	<style>
+        body{
+            font-family: 'Open Sans',sans-serif;
+            background-color:  #000000;
+           margin-top: 15%;
+        }
+        #container{
+            width: 96%;
+            height: 96%;
+            margin: auto auto;	
+            padding: 3%;
+        }
+        #calculator{
+            width: 100%;
+            height: 100%;
+            background-color: #eaedef;
+            margin: 0 auto;
+
+            position: absolute;
+            border-radius: 5px;
+        }
+        #result{
+            height:30%;
+            color: #303030;
+        }
+        #history{
+            text-align: right;
+            height: 30px;
+            margin: 0 20px;
+            padding-top: 20px;
+            font-size: 20px;
+            color: #5e5e5e;
+        }
+        #output{
+            text-align: right;
+            height: 80px;
+            margin: 10px 10px;
+            color: #303030;
+            font-size: 30px;
+        }
+       
+        #keyboard{
+            height: 70.9%;
+          
+        }
+        
+        .operator, .number, .empty{
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            float: center;
+            border-radius: 50%;
+            border-width: 0;
+
+            font-size: 30px;
+        }
+        .number, .empty{
+            background-color: #eaedef;
+        }
+        .number, .operator{
+            cursor: pointer;
+           
+        }
+        .number{
+            color: #464646;
+        }
+        .operator{
+            color: #666666;
+        }
+        .operator:active, .number:active{
+            font-size: 25px;
+        }
+        .operator:focus, .number:focus, .empty:focus{
+            outline: 0;
+        }
+        button:nth-child(4){
+            font-size: 25px;
+            color: #3d3d3d;
+            background-color: #27d3ca;
+        }
+        button:nth-child(8){
+            font-size: 25px; 
+            color: #3d3d3d;
+            background-color: #f8b944;
+        }
+        button:nth-child(12){
+            font-size: 25px;
+            color: #3d3d3d;
+            background-color: #f78383;
+        }
+        button:nth-child(16){
+            font-size: 25px;
+            color: #3d3d3d;
+            background-color: #87a0fa;
+        }
+        button:nth-child(20){
+            font-size: 25px;
+            color: #3d3d3d;
+            background-color: #c396ec;
+        }
+    </style>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <div id="container">
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+                    </div>
+                    <hr style="width: 90%;">
+				</div>
+				<div id="keyboard">
+               
+					<button class="operator" id="clear">C</button>
+					<button class="operator" id="backspace">CE</button>
+					<button class="operator" id="%">%</button>
+					<button class="operator" id="/">&#247;</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator" id="*">&times;</button>
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="-">-</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="+">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="number" id="0">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operator" id="=">=</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+    </body>
+</html>
