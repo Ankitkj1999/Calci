@@ -10,102 +10,92 @@
 	<style>
         body{
             font-family: 'Open Sans',sans-serif;
-            background-color:  #000000;
-           margin-top: 15%;
+            background-color: black;
+            top:50%;
+            bottom: 50%;
         }
         #container{
-            width: 96%;
-            height: 96%;
-            margin: auto auto;	
-            padding: 3%;
+            width: 96%px;
+            height: 96%px;
+            margin: auto;	
+            float: center;
+            position: relative;
+            top:50%;
+            bottom: 50%;
         }
         #calculator{
-            width: 100%;
-            height: 100%;
+            width: 320px;
+            height: 520px;
             background-color: #eaedef;
-            margin: 0 auto;
-
-            position: absolute;
+            margin: auto;
+            top: 20px;
+            position: relative;
             border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
         #result{
-            height:30%;
-            color: #303030;
+            height: 120px;
+            margin-bottom: 3%;
         }
         #history{
             text-align: right;
-            height: 30px;
+            height: 20px;
             margin: 0 20px;
             padding-top: 20px;
-            font-size: 20px;
-            color: #5e5e5e;
+            font-size: 15px;
+            color: #919191;
         }
         #output{
             text-align: right;
-            height: 80px;
-            margin: 10px 10px;
-            color: #303030;
+            height: 60px;
+            margin: 10px 20px;
             font-size: 30px;
         }
-       
         #keyboard{
-            height: 70.9%;
-          
+            height: 400px;
+            padding-bottom: 2%;
         }
-        
         .operator, .number, .empty{
             width: 50px;
             height: 50px;
-            margin: 10px;
-            float: center;
+            margin: 15px;
+            float: left;
             border-radius: 50%;
             border-width: 0;
-
-            font-size: 30px;
+            font-weight: bold;
+            font-size: 15px;
         }
         .number, .empty{
             background-color: #eaedef;
         }
         .number, .operator{
             cursor: pointer;
-           
-        }
-        .number{
-            color: #464646;
-        }
-        .operator{
-            color: #666666;
         }
         .operator:active, .number:active{
-            font-size: 25px;
+            font-size: 13px;
         }
         .operator:focus, .number:focus, .empty:focus{
             outline: 0;
         }
         button:nth-child(4){
-            font-size: 25px;
-            color: #3d3d3d;
-            background-color: #27d3ca;
+            font-size: 20px;
+            background-color: #20b2aa;
         }
         button:nth-child(8){
-            font-size: 25px; 
-            color: #3d3d3d;
-            background-color: #f8b944;
+            font-size: 20px;
+            background-color: #ffa500;
         }
         button:nth-child(12){
-            font-size: 25px;
-            color: #3d3d3d;
-            background-color: #f78383;
+            font-size: 20px;
+            background-color: #f08080;
         }
         button:nth-child(16){
-            font-size: 25px;
-            color: #3d3d3d;
-            background-color: #87a0fa;
+            font-size: 20px;
+            background-color: #7d93e0;
         }
         button:nth-child(20){
-            font-size: 25px;
-            color: #3d3d3d;
-            background-color: #c396ec;
+            font-size: 20px;
+            background-color: #9477af;
         }
     </style>
     </head>
